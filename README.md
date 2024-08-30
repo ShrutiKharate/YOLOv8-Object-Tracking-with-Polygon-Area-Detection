@@ -1,45 +1,32 @@
-## ⚒️ Set-Up Instructions
+# YOLOv8 Object Tracking with Polygon Area Detection
 
-<p align = "center"><img src = "./assets/doc_assets/setup.gif" height = 300 alt = "SetUp Icon"></p>
+## Overview
+This project demonstrates real-time object tracking in videos using the YOLOv8 model. The primary goal is to detect and track objects within a specified polygonal area in a video. The system highlights detected objects and their tracking IDs, providing a visual representation of object movements and interactions within the defined area.
 
-- Open your terminal / command prompt. 
+## Features
 
-    
+~ Real-Time Object Tracking: Uses the YOLOv8 model to track objects in video frames.
 
-    
+~ Polygon Area Detection: Highlights objects that enter a predefined polygonal region.
 
-- Ensure you have any version of [Python](https://www.python.org/downloads/)  3.11.5 installed in your system and you have `virtualenv` package installed
+~ Visual Annotations: Draws bounding boxes around detected objects, marks specific points, and displays tracking IDs and class names.
 
-    
-    
+~ Mouse Interaction: Captures and prints BGR coordinates of the mouse position in the video frame.
 
+### Technologies Used
 
-    
+~ YOLOv8 (Ultralytics): The object detection model used for identifying and tracking objects within video frames.
 
-- Create a new virtual environment
-```    
-    python -m venv env
-```    
+~ OpenCV: A computer vision library used for video capture, frame processing, and visual annotations.
 
-- Activate virtual enviroment
-    - On Mac/Linux
-        terminal
-        source env/bin/activate
-        
-    - On Windows
-        terminal
-        env/Scripts/Activate.ps1 
-        
-- Install the dependencies
-    
-    pip install -r requirements.txt
-    
-- provide your video path in task.py
-  
-- Run the task.py 
-```
-    python task.py 
-```
+~ NumPy: A library for handling arrays and performing mathematical operations.
 
-## Question answers
+### How It Works
 
+~ Video Capture: The video is read frame by frame using OpenCV.
+
+~ Object Tracking: YOLOv8 performs object detection and tracking on each frame.
+
+~ Polygon Area Check: Objects within a specified polygonal area are highlighted with visual annotations.
+
+~ Visual Output: The processed video frames are displayed in real-time with bounding boxes, tracking IDs, and additional annotations.

@@ -2,6 +2,9 @@
 ## Overview
 This project demonstrates real-time object tracking in videos using the YOLOv8 model. The primary goal is to detect and track objects within a specified polygonal area in a video. The system highlights detected objects and their tracking IDs, providing a visual representation of object movements and interactions within the defined area.
 
+![output2](https://github.com/user-attachments/assets/b596022b-49ab-4442-9a62-20c22f393482)
+
+
 ### Features
 ~Real-Time Object Tracking: Uses the YOLOv8 model to track objects in video frames.
 
